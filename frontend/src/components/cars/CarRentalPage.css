@@ -1,0 +1,137 @@
+/* Container for the entire rental section */
+.rental-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Style for the car image section */
+.car-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Style for the rental information section */
+.rental-info {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5fcf8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for car model and brand */
+.rental-info h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inputs for rental and return date */
+.date-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.date-inputs label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.date-inputs input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Highlight rented dates in red */
+.rented-date {
+  background-color: red !important;
+  color: white !important;
+  border-radius: 50%;
+  pointer-events: none; /* Disable click */
+  cursor: not-allowed; /* Change cursor */
+}
+/* Details section styling */
+.details p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.details p strong {
+  color: #333;
+}
+
+/* Styling for the total price section */
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.total p {
+  font-size: 16px;
+  color: #666;
+}
+
+.total h3 {
+  font-size: 20px;
+  color: #4caf50;
+  margin: 0;
+}
+
+/* Button styling */
+.confirm-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #45a049;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .rental-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .car-image img {
+    max-width: 100%;
+  }
+
+  .rental-info {
+    padding: 15px;
+  }
+}
+.react-datepicker__day--rented {
+  background-color: red !important;
+  color: white !important;
+}
